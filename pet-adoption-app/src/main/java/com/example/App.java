@@ -80,10 +80,10 @@ public class App extends Application {
         gridPane.setAlignment(Pos.TOP_CENTER);
 
         // Arranging all the nodes in the grid
-        gridPane.add(toggleLabel, 1, 0);
+        gridPane.add(toggleLabel, 0, 0);
         gridPane.add(CriList, 0, 1);
         gridPane.add(all, 1, 1);
-        gridPane.add(sortLabel, 1, 2);
+        gridPane.add(sortLabel, 0, 2);
         gridPane.add(breedLabel, 0, 3);
         gridPane.add(distanceLabel, 1, 3);
         gridPane.add(ageLabel, 2, 3);
@@ -91,17 +91,14 @@ public class App extends Application {
         gridPane.add(distanceBox, 1, 4);
         gridPane.add(ageBox, 2, 4);
 
-        // gridPane.add(technologiesLabel, 0, 4);
-        // gridPane.add(javaCheckBox, 1, 4);
-        // gridPane.add(dotnetCheckBox, 2, 4);
-
-        // gridPane.add(educationLabel, 0, 5);
-        // gridPane.add(educationListView, 1, 5);
-
-        // gridPane.add(locationLabel, 0, 6);
-        // gridPane.add(locationchoiceBox, 1, 6);
-
-        // gridPane.add(buttonRegister, 2, 8);
+        // Styling nodes
+        toggleLabel.setStyle("-fx-font: normal bold 15px 'serif' ");
+        sortLabel.setStyle("-fx-font: normal bold 15px 'serif' ");
+        // genderLabel.setStyle("-fx-font: normal bold 15px 'serif' ");
+        // reservationLabel.setStyle("-fx-font: normal bold 15px 'serif' ");
+        // technologiesLabel.setStyle("-fx-font: normal bold 15px 'serif' ");
+        // educationLabel.setStyle("-fx-font: normal bold 15px 'serif' ");
+        // locationLabel.setStyle("-fx-font: normal bold 15px 'serif' ");
 
         // Setting the back ground color
         gridPane.setStyle("-fx-background-color: BEIGE;");
